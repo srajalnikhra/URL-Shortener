@@ -32,9 +32,9 @@ func createURL(original_url string) string {
 	shortURL := generateShortURL(original_url)
 	id := shortURL
 	urlDB[id] = URL{
-		ID: id,
-		OriginalURL: original_url,
-		ShortURL: shortURL,
+		ID:           id,
+		OriginalURL:  original_url,
+		ShortURL:     shortURL,
 		CreationDate: time.Now(),
 	}
 	return shortURL
@@ -91,7 +91,7 @@ func main() {
 
 	fmt.Println(("Starting server on port 3000..."))
 	err := http.ListenAndServe(":3000", nil)
-	if err != nil{
+	if err != nil {
 		fmt.Println("error on starting server:", err)
 	}
 }
