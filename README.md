@@ -34,7 +34,6 @@ The project demonstrates clean routing, structured data handling, and RESTful AP
 URL-Shortener/
 │── main.go             # Entry point - server setup, handlers, and routing
 │── go.mod              # Go module configuration
-│── go.sum              # Dependencies checksum (auto-generated)
 │── README.md           # Project documentation
 ```
 
